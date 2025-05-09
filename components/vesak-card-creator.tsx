@@ -46,9 +46,9 @@ export default function VesakCardCreator() {
   const [stampImages, setStampImages] = useState([
     { id: 1, src: "/stamp-a.jpg?height=100&width=100", alt: "Stamp 1" },
     { id: 2, src: "/stamp-b.jpg?height=100&width=100", alt: "Stamp 2" },
-    { id: 3, src: "/placeholder.svg?height=100&width=100", alt: "Lotus flower" },
-    { id: 4, src: "/placeholder.svg?height=100&width=100", alt: "Sinhala text 1" },
-    { id: 5, src: "/placeholder.svg?height=100&width=100", alt: "Sinhala text 2" },
+    { id: 3, src: "/stamp-c.jpg?height=100&width=100", alt: "Lotus flower" },
+    { id: 4, src: "/stamp-d.jpg?height=100&width=100", alt: "Sinhala text 1" },
+    { id: 5, src: "/stamp-e.jpg?height=100&width=100", alt: "Sinhala text 2" },
   ])
   const [selectedCardImage, setSelectedCardImage] = useState(cardImages[0])
   const [selectedStamp, setSelectedStamp] = useState(stampImages[0])
@@ -115,7 +115,7 @@ export default function VesakCardCreator() {
                   <div className={`w-full md:w-1/2 ${selectedTheme.primary} relative`}>
                     <div className="aspect-square relative">
                       <Image
-                        src={selectedCardImage.src || "/placeholder.svg"}
+                        src={selectedCardImage.src || "/logo.png"}
                         alt={selectedCardImage.alt}
                         fill
                         className="object-cover"
@@ -128,7 +128,7 @@ export default function VesakCardCreator() {
                     {/* Logo */}
                     <div className="self-end flex items-center gap-1 mb-2">
                       <div className="relative h-5 w-5">
-                        <Image src="/placeholder.svg?height=20&width=20" alt="Code Craftix" width={20} height={20} />
+                        <Image src="/logo.png?height=20&width=20" alt="Code Craftix" width={20} height={20} />
                       </div>
                       <span className="text-xs text-gray-500">Code Craftix</span>
                     </div>
@@ -136,7 +136,7 @@ export default function VesakCardCreator() {
                     {/* Stamp */}
                     <div className="self-end mb-4">
                       <Image
-                        src={selectedStamp.src || "/placeholder.svg"}
+                        src={selectedStamp.src || "/logo.png"}
                         alt={selectedStamp.alt}
                         width={60}
                         height={60}
@@ -279,7 +279,7 @@ export default function VesakCardCreator() {
                         >
                           <div className="aspect-square relative">
                             <Image
-                              src={image.src || "/placeholder.svg"}
+                              src={image.src || "/logo.png"}
                               alt={image.alt}
                               fill
                               className="object-cover"
@@ -324,7 +324,7 @@ export default function VesakCardCreator() {
                         >
                           <div className="aspect-square relative">
                             <Image
-                              src={stamp.src || "/placeholder.svg"}
+                              src={stamp.src || "/logo.png"}
                               alt={stamp.alt}
                               fill
                               className="object-cover"
@@ -467,7 +467,7 @@ export default function VesakCardCreator() {
             <Card className="p-4 mt-4 bg-gradient-to-r from-teal-50 to-amber-50 border-teal-100">
               <div className="flex items-start gap-3">
                 <div className="relative h-12 w-12 flex-shrink-0">
-                  <Image src="/placeholder.svg?height=48&width=48" alt="Code Craftix Logo" width={48} height={48} />
+                  <Image src="/logo.png?height=48&width=48" alt="Code Craftix Logo" width={48} height={48} />
                 </div>
                 <div>
                   <h3 className="font-medium text-teal-700">Code Craftix Technologies</h3>
