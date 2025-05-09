@@ -20,7 +20,7 @@ export default function AppBar() {
           <div className="flex items-center gap-2">
             <div className="relative h-10 w-10">
               <Image
-                src="/placeholder.svg?height=40&width=40"
+                src="/logo.png?height=40&width=40"
                 alt="Code Craftix Logo"
                 width={40}
                 height={40}
@@ -29,7 +29,7 @@ export default function AppBar() {
             </div>
             <div className="hidden md:block">
               <h1 className="text-xl font-bold text-teal-700">Vesak Card Creator</h1>
-              <p className="text-xs text-teal-600/80">by Code Craftix Technologies</p>
+              <p className="text-xs text-teal-600/80">by CodeCraftix Technologies</p>
             </div>
           </div>
         </div>
