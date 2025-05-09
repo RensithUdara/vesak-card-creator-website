@@ -37,15 +37,15 @@ const colorThemes = [
 export default function VesakCardCreator() {
   const [customPoem, setCustomPoem] = useState("")
   const [cardImages, setCardImages] = useState([
-    { id: 1, src: "/placeholder.svg?height=150&width=150", alt: "Buddha with lotus" },
-    { id: 2, src: "/placeholder.svg?height=150&width=150", alt: "Buddha silhouette with moon" },
-    { id: 3, src: "/placeholder.svg?height=150&width=150", alt: "Bodhi tree at sunset" },
-    { id: 4, src: "/placeholder.svg?height=150&width=150", alt: "Buddha statue" },
-    { id: 5, src: "/placeholder.svg?height=150&width=150", alt: "Buddha with golden light" },
+    { id: 1, src: "/image1.jpg?height=150&width=150", alt: "Buddha with lotus" },
+    { id: 2, src: "/image-2.jpg?height=150&width=150", alt: "Buddha silhouette with moon" },
+    { id: 3, src: "/image-3.webp?height=150&width=150", alt: "Bodhi tree at sunset" },
+    { id: 4, src: "/image-4.webp?height=150&width=150", alt: "Buddha statue" },
+    { id: 5, src: "/image-5.webp?height=150&width=150", alt: "Buddha with golden light" },
   ])
   const [stampImages, setStampImages] = useState([
-    { id: 1, src: "/placeholder.svg?height=100&width=100", alt: "Stamp 1" },
-    { id: 2, src: "/placeholder.svg?height=100&width=100", alt: "Stamp 2" },
+    { id: 1, src: "/stamp-a.jpg?height=100&width=100", alt: "Stamp 1" },
+    { id: 2, src: "/stamp-b.jpg?height=100&width=100", alt: "Stamp 2" },
     { id: 3, src: "/placeholder.svg?height=100&width=100", alt: "Lotus flower" },
     { id: 4, src: "/placeholder.svg?height=100&width=100", alt: "Sinhala text 1" },
     { id: 5, src: "/placeholder.svg?height=100&width=100", alt: "Sinhala text 2" },
@@ -273,9 +273,8 @@ export default function VesakCardCreator() {
                       {cardImages.map((image) => (
                         <div
                           key={image.id}
-                          className={`border-2 rounded cursor-pointer overflow-hidden ${
-                            selectedCardImage.id === image.id ? "border-teal-500" : "border-gray-200"
-                          }`}
+                          className={`border-2 rounded cursor-pointer overflow-hidden ${selectedCardImage.id === image.id ? "border-teal-500" : "border-gray-200"
+                            }`}
                           onClick={() => setSelectedCardImage(image)}
                         >
                           <div className="aspect-square relative">
@@ -319,9 +318,8 @@ export default function VesakCardCreator() {
                       {stampImages.map((stamp) => (
                         <div
                           key={stamp.id}
-                          className={`border-2 rounded cursor-pointer overflow-hidden ${
-                            selectedStamp.id === stamp.id ? "border-teal-500" : "border-gray-200"
-                          }`}
+                          className={`border-2 rounded cursor-pointer overflow-hidden ${selectedStamp.id === stamp.id ? "border-teal-500" : "border-gray-200"
+                            }`}
                           onClick={() => setSelectedStamp(stamp)}
                         >
                           <div className="aspect-square relative">
@@ -367,9 +365,8 @@ export default function VesakCardCreator() {
                       {colorThemes.map((theme) => (
                         <div
                           key={theme.id}
-                          className={`border-2 rounded-md p-2 cursor-pointer ${
-                            selectedTheme.id === theme.id ? "border-teal-500" : "border-gray-200"
-                          }`}
+                          className={`border-2 rounded-md p-2 cursor-pointer ${selectedTheme.id === theme.id ? "border-teal-500" : "border-gray-200"
+                            }`}
                           onClick={() => setSelectedTheme(theme)}
                         >
                           <div className="flex items-center gap-2">
